@@ -8,10 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var testLabel: UILabel!
+    
+    @IBAction func moveSlide(sender: UISlider) {
+        testLabel.text = String(sender.value)
+    
+    }
+
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+        NSUserDefaults.standardUserDefaults().setValue("test", forKey: "key")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
