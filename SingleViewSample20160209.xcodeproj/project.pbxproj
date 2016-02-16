@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		181AC20D1C6A28E400C3FC08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AC20C1C6A28E400C3FC08 /* AppDelegate.swift */; };
 		181AC20F1C6A28E400C3FC08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AC20E1C6A28E400C3FC08 /* ViewController.swift */; };
-		181AC2121C6A28E400C3FC08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181AC2101C6A28E400C3FC08 /* Main.storyboard */; };
+		181AC2121C6A28E400C3FC08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181AC2101C6A28E400C3FC08 /* Main.storyboard */; settings = {ASSET_TAGS = (hoge, ); }; };
 		181AC2141C6A28E400C3FC08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181AC2131C6A28E400C3FC08 /* Assets.xcassets */; };
 		181AC2171C6A28E400C3FC08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181AC2151C6A28E400C3FC08 /* LaunchScreen.storyboard */; };
 		181AC2221C6A28E400C3FC08 /* SingleViewSample20160209Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AC2211C6A28E400C3FC08 /* SingleViewSample20160209Tests.swift */; };
 		181AC22D1C6A28E400C3FC08 /* SingleViewSample20160209UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AC22C1C6A28E400C3FC08 /* SingleViewSample20160209UITests.swift */; };
+		181AC23B1C6A2D2000C3FC08 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AC23A1C6A2D2000C3FC08 /* TableViewController.swift */; };
+		181AC23D1C6A399D00C3FC08 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181AC23C1C6A399D00C3FC08 /* CustomButton.swift */; };
+		18D97D651C6DA9BB003E66B8 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D97D641C6DA9BB003E66B8 /* CustomCell.swift */; };
+		18DD4C491C72EBCA001BA5AF /* hogehogefoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD4C481C72EBCA001BA5AF /* hogehogefoo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		181AC2281C6A28E400C3FC08 /* SingleViewSample20160209UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingleViewSample20160209UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181AC22C1C6A28E400C3FC08 /* SingleViewSample20160209UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewSample20160209UITests.swift; sourceTree = "<group>"; };
 		181AC22E1C6A28E400C3FC08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181AC23A1C6A2D2000C3FC08 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		181AC23C1C6A399D00C3FC08 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		18D97D641C6DA9BB003E66B8 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		18DD4C481C72EBCA001BA5AF /* hogehogefoo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hogehogefoo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,13 @@
 		181AC20B1C6A28E400C3FC08 /* SingleViewSample20160209 */ = {
 			isa = PBXGroup;
 			children = (
+				18DD4C4A1C72EC04001BA5AF /* test */,
 				181AC20C1C6A28E400C3FC08 /* AppDelegate.swift */,
 				181AC20E1C6A28E400C3FC08 /* ViewController.swift */,
 				181AC2101C6A28E400C3FC08 /* Main.storyboard */,
+				18D97D641C6DA9BB003E66B8 /* CustomCell.swift */,
+				181AC23C1C6A399D00C3FC08 /* CustomButton.swift */,
+				181AC23A1C6A2D2000C3FC08 /* TableViewController.swift */,
 				181AC2131C6A28E400C3FC08 /* Assets.xcassets */,
 				181AC2151C6A28E400C3FC08 /* LaunchScreen.storyboard */,
 				181AC2181C6A28E400C3FC08 /* Info.plist */,
@@ -123,6 +135,14 @@
 				181AC22E1C6A28E400C3FC08 /* Info.plist */,
 			);
 			path = SingleViewSample20160209UITests;
+			sourceTree = "<group>";
+		};
+		18DD4C4A1C72EC04001BA5AF /* test */ = {
+			isa = PBXGroup;
+			children = (
+				18DD4C481C72EBCA001BA5AF /* hogehogefoo.swift */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +207,9 @@
 		181AC2011C6A28E400C3FC08 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					hoge,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "松井和久";
@@ -259,7 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181AC23D1C6A399D00C3FC08 /* CustomButton.swift in Sources */,
 				181AC20F1C6A28E400C3FC08 /* ViewController.swift in Sources */,
+				18D97D651C6DA9BB003E66B8 /* CustomCell.swift in Sources */,
+				181AC23B1C6A2D2000C3FC08 /* TableViewController.swift in Sources */,
+				18DD4C491C72EBCA001BA5AF /* hogehogefoo.swift in Sources */,
 				181AC20D1C6A28E400C3FC08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +514,7 @@
 				181AC2331C6A28E400C3FC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		181AC2341C6A28E400C3FC08 /* Build configuration list for PBXNativeTarget "SingleViewSample20160209Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +523,7 @@
 				181AC2361C6A28E400C3FC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		181AC2371C6A28E400C3FC08 /* Build configuration list for PBXNativeTarget "SingleViewSample20160209UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +532,7 @@
 				181AC2391C6A28E400C3FC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
